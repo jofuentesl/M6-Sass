@@ -1,0 +1,20 @@
+@mixin layout($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin transform($skew, $scale, $trsnlt1, $trsnlt2) {
+    transform: skew($skew) scaleY($scale) translate($trsnlt1, $trsnlt2);
+}
+
+@mixin webkit__transform($skew, $scale, $trsnlt1, $trsnlt2) {
+    -webkit-transform: skew($skew) scaleX($scale) translate($trsnlt1, $trsnlt2);
+}
+
+@mixin style_strip($color, $animation, $duration, $function) {
+    background-color:$color;
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $function;
+}
